@@ -1,0 +1,16 @@
+<p class="funclass">LEARN HOW TO CALL FUNCTION IN THIS PAGE</p>
+<p class="funclass">
+    <button (click)="getFirtsFun()">CLICK ME-SIMPLE ALERT</button>
+    <button (click)="getFirtsPARAM('Hi PASS VALUE')">CLICK ME-PASS VALUE</button>
+    <button (click)="getFirtsFROMCOMPO(lastname)">CLICK ME-PASS VALUE-LAST NAME</button>
+</p>
+<p class="funclass">
+    <label>On Click GET ALERT</label>
+    <input type="text" #box (click)="getMyevent(box.value)" />
+    <br>
+    <label>On Key UP VALUE PRINT IN CONSOLE</label>
+    <input type="text" #boxkeyup (keyup)="getMyEventData(boxkeyup.value)" />
+    <br>
+    <label>On Key CLICK ENTER VALUE PRINT IN CONSOLE</label>
+    <input type="text" #boxenter (keyup)="getMyEventData(boxenter.value)" />
+</p>
